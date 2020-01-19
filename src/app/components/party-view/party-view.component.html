@@ -1,0 +1,8 @@
+<div *ngIf="partyObservable$ | async as party">
+  <pre>
+    {{ party | json }}
+  </pre>
+
+
+  <app-player-bar></app-player-bar>
+</div>

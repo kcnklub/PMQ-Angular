@@ -1,0 +1,13 @@
+<div class="centered">
+  <h2>Join an Existing Party</h2>
+  <form [formGroup]="joinPartyForm" (ngSubmit)="onSubmit(joinPartyForm.value)">
+    <div>
+      <label for="passCode">
+        Enter Pass Code
+      </label>
+      <input id="passCode" type="text" formControlName="passCode">
+    </div>
+
+    <button class="button" type="submit">Join Party</button>
+  </form>
+</div>
